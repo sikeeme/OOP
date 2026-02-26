@@ -1,0 +1,16 @@
+D:\4\ООП\Lab1\obj\Debug\net8.0-windows\Lab1.Form1.resources
+D:\4\ООП\Lab1\obj\Debug\net8.0-windows\Lab1.csproj.GenerateResource.cache
+D:\4\ООП\Lab1\obj\Debug\net8.0-windows\Lab1.GeneratedMSBuildEditorConfig.editorconfig
+D:\4\ООП\Lab1\obj\Debug\net8.0-windows\Lab1.AssemblyInfoInputs.cache
+D:\4\ООП\Lab1\obj\Debug\net8.0-windows\Lab1.AssemblyInfo.cs
+D:\4\ООП\Lab1\obj\Debug\net8.0-windows\Lab1.csproj.CoreCompileInputs.cache
+D:\4\ООП\Lab1\bin\Debug\net8.0-windows\Lab1.exe
+D:\4\ООП\Lab1\bin\Debug\net8.0-windows\Lab1.deps.json
+D:\4\ООП\Lab1\bin\Debug\net8.0-windows\Lab1.runtimeconfig.json
+D:\4\ООП\Lab1\bin\Debug\net8.0-windows\Lab1.dll
+D:\4\ООП\Lab1\bin\Debug\net8.0-windows\Lab1.pdb
+D:\4\ООП\Lab1\obj\Debug\net8.0-windows\Lab1.dll
+D:\4\ООП\Lab1\obj\Debug\net8.0-windows\refint\Lab1.dll
+D:\4\ООП\Lab1\obj\Debug\net8.0-windows\Lab1.pdb
+D:\4\ООП\Lab1\obj\Debug\net8.0-windows\Lab1.genruntimeconfig.cache
+D:\4\ООП\Lab1\obj\Debug\net8.0-windows\ref\Lab1.dll
