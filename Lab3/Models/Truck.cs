@@ -1,8 +1,5 @@
 ﻿namespace Lab3.Models
 {
-    /// <summary>
-    /// Derived class representing a truck.
-    /// </summary>
     public class Truck : Vehicle
     {
         public double MaxLoad { get; set; }

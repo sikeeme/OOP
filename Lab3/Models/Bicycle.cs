@@ -1,8 +1,5 @@
 ﻿namespace Lab3.Models
 {
-    /// <summary>
-    /// Derived class representing a bicycle.
-    /// </summary>
     public class Bicycle : Vehicle
     {
         public int NumberOfGears { get; set; }

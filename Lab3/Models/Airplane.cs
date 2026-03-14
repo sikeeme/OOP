@@ -1,8 +1,5 @@
 ﻿namespace Lab3.Models
 {
-    /// <summary>
-    /// Derived class representing an airplane.
-    /// </summary>
     public class Airplane : Vehicle
     {
         public int Wingspan { get; set; }

@@ -1,8 +1,5 @@
 ﻿namespace Lab3.Models
 {
-    /// <summary>
-    /// Derived class representing a motorcycle.
-    /// </summary>
     public class Motorcycle : Vehicle
     {
         public bool HasSidecar { get; set; }

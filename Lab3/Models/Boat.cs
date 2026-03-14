@@ -1,8 +1,5 @@
 ﻿namespace Lab3.Models
 {
-    /// <summary>
-    /// Derived class representing a boat.
-    /// </summary>
     public class Boat : Vehicle
     {
         public string Propulsion { get; set; } = "Motor";
