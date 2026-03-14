@@ -2,33 +2,23 @@
 
 namespace Lab2.Shapes
 {
-    /// <summary>
-    /// Abstract base class for all shapes.
-    /// Does NOT contain any drawing method (as required).
-    /// Contains only data + creation methods for mouse input.
-    /// </summary>
     public abstract class Shape
     {
         public Color Color { get; set; } = Color.Black;
 
-        /// <summary>
-        /// Called when mouse button is pressed - sets initial position.
-        /// </summary>
+        // Called when mouse button is pressed - sets initial position / anchor point.
         public abstract void StartCreation(Point startPoint);
 
-        /// <summary>
-        /// Called on mouse move during drag - updates size/position.
-        /// </summary>
+        // Called on mouse move during drag - updates temporary size/position for preview.   
         public abstract void UpdateCreation(Point currentPoint);
 
-        /// <summary>
-        /// Called when mouse button is released - finalizes the shape.
-        /// </summary>
+        // Called when mouse button is released - finalizes the shape properties.
         public abstract void FinishCreation(Point endPoint);
 
-        /// <summary>
-        /// For displaying in ListBox (override in concrete classes).
-        /// </summary>
+        // Each concrete shape must implement its own drawing logic.
+        public abstract void Draw(Graphics g);
+
+        // For displaying in ListBox (should be overridden in concrete classes).
         public override string ToString()
         {
             return "Unknown Shape";

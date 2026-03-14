@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Reflection;
 using System.Windows.Forms;
-using Lab2.Shapes;   // <-- важно!
+using Lab2.Shapes;
 
 namespace Lab2
 {
@@ -14,6 +14,8 @@ namespace Lab2
         private Color currentColor = Color.Black;
         private List<Type> availableShapeTypes = new List<Type>();
 
+
+        // Initializes the form, loads available shapes using reflection, and subscribes to all necessary events.
         public Form1()
         {
             InitializeComponent();
@@ -21,10 +23,8 @@ namespace Lab2
             SubscribeEvents();
         }
 
-        /// <summary>
-        /// Populates ComboBox with all shapes using reflection.
-        /// Adding new class requires NO changes here!
-        /// </summary>
+        // Discovers all concrete (non-abstract) classes derived from Shape using reflection 
+        // and fills the ComboBox with their names. Adding a new shape requires no changes here.
         private void LoadAvailableShapes()
         {
             availableShapeTypes = Assembly.GetExecutingAssembly()
@@ -37,10 +37,14 @@ namespace Lab2
             {
                 shapeComboBox.Items.Add(type.Name);
             }
+
             if (shapeComboBox.Items.Count > 0)
+            {
                 shapeComboBox.SelectedIndex = 0;
+            }
         }
 
+        // Attaches event handlers to the canvas and control buttons.
         private void SubscribeEvents()
         {
             canvasPanel.Paint += CanvasPanel_Paint;
@@ -50,12 +54,14 @@ namespace Lab2
 
             colorButton.Click += ColorButton_Click;
             clearButton.Click += ClearButton_Click;
-            //deleteButton.Click += DeleteButton_Click;
+            deleteButton.Click += DeleteButton_Click;
         }
 
-        private void CanvasPanel_MouseDown(object sender, MouseEventArgs e)
+        // Initiates creation of a new shape when the user clicks on the canvas.
+        private void CanvasPanel_MouseDown(object? sender, MouseEventArgs e)
         {
-            if (shapeComboBox.SelectedIndex < 0) return;
+            if (shapeComboBox.SelectedIndex < 0)
+                return;
 
             Type selectedType = availableShapeTypes[shapeComboBox.SelectedIndex];
             currentCreatingShape = (Shape)Activator.CreateInstance(selectedType);
@@ -65,90 +71,81 @@ namespace Lab2
             canvasPanel.Invalidate();
         }
 
-        private void CanvasPanel_MouseMove(object sender, MouseEventArgs e)
+        // Updates the live preview of the shape being created as the mouse moves.
+        private void CanvasPanel_MouseMove(object? sender, MouseEventArgs e)
         {
-            if (currentCreatingShape == null) return;
+            if (currentCreatingShape == null)
+                return;
 
             currentCreatingShape.UpdateCreation(e.Location);
             canvasPanel.Invalidate();
         }
 
-        private void CanvasPanel_MouseUp(object sender, MouseEventArgs e)
+        // Finalizes shape creation, adds it to the collection and list box, and refreshes the canvas.
+        private void CanvasPanel_MouseUp(object? sender, MouseEventArgs e)
         {
-            if (currentCreatingShape == null) return;
+            if (currentCreatingShape == null)
+                return;
 
             currentCreatingShape.FinishCreation(e.Location);
             shapes.Add(currentCreatingShape);
 
-            shapesListBox.Items.Add(currentCreatingShape); // uses ToString()
+            shapesListBox.Items.Add(currentCreatingShape); 
             currentCreatingShape = null;
+
             canvasPanel.Invalidate();
         }
 
-        /// <summary>
-        /// Drawing logic is here. Only here we use if (because drawing is NOT forbidden to be in one place).
-        /// When you add a new shape, you just add one "else if" block here.
-        /// </summary>
-        private void CanvasPanel_Paint(object sender, PaintEventArgs e)
+        // Redraws the entire canvas: all completed shapes + current shape being created (if any).
+        private void CanvasPanel_Paint(object? sender, PaintEventArgs e)
         {
             Graphics g = e.Graphics;
             g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 
-            // Draw finished shapes
+            // Draw all finished shapes
             foreach (var shape in shapes)
             {
                 DrawSingleShape(g, shape);
             }
 
-            // Draw current creating shape (live preview)
+            // Draw preview of shape currently being created
             if (currentCreatingShape != null)
             {
                 DrawSingleShape(g, currentCreatingShape);
             }
         }
 
+        // Draws a single shape using its polymorphic Draw method.
+        // No if-else chains Ч drawing logic is delegated to the shape classes themselves.
         private void DrawSingleShape(Graphics g, Shape shape)
         {
-            using (Pen pen = new Pen(shape.Color, 2))
-            {
-                if (shape is Circle circle)
-                {
-                    g.DrawEllipse(pen,
-                        circle.Center.X - circle.Radius,
-                        circle.Center.Y - circle.Radius,
-                        circle.Radius * 2,
-                        circle.Radius * 2);
-                }
-                else if (shape is RectangleShape rect)
-                {
-                    g.DrawRectangle(pen, rect.X, rect.Y, rect.Width, rect.Height);
-                }
-                else if (shape is Line line)
-                {
-                    g.DrawLine(pen, line.Start, line.End);
-                }
-            }
+            shape.Draw(g);
         }
 
-        private void ColorButton_Click(object sender, EventArgs e)
+        // Opens the color selection dialog and updates the current drawing color.
+        private void ColorButton_Click(object? sender, EventArgs e)
         {
-            using (ColorDialog cd = new ColorDialog())
+            using (ColorDialog colorDialog = new ColorDialog())
             {
-                if (cd.ShowDialog() == DialogResult.OK)
+                colorDialog.Color = currentColor;
+
+                if (colorDialog.ShowDialog() == DialogResult.OK)
                 {
-                    currentColor = cd.Color;
+                    currentColor = colorDialog.Color;
                 }
             }
         }
 
-        private void ClearButton_Click(object sender, EventArgs e)
+        // Clears all shapes from the canvas and resets the shapes list.
+        private void ClearButton_Click(object? sender, EventArgs e)
         {
             shapes.Clear();
             shapesListBox.Items.Clear();
             canvasPanel.Invalidate();
         }
 
-        private void DeleteButton_Click(object sender, EventArgs e)
+        // Removes the selected shape from both the list and the canvas.
+        private void DeleteButton_Click(object? sender, EventArgs e)
         {
             if (shapesListBox.SelectedIndex >= 0)
             {

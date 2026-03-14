@@ -3,32 +3,32 @@
   "WorkspaceRootPath": "D:\\4\\\u041E\u041E\u041F\\Lab2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3CA70363-6F33-42A2-879B-DDF1A8AF0D03}|Lab2.csproj|d:\\4\\\u043E\u043E\u043F\\lab2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3CA70363-6F33-42A2-879B-DDF1A8AF0D03}|Lab2.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CA70363-6F33-42A2-879B-DDF1A8AF0D03}|Lab2.csproj|d:\\4\\\u043E\u043E\u043F\\lab2\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CA70363-6F33-42A2-879B-DDF1A8AF0D03}|Lab2.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3CA70363-6F33-42A2-879B-DDF1A8AF0D03}|Lab2.csproj|d:\\4\\\u043E\u043E\u043F\\lab2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3CA70363-6F33-42A2-879B-DDF1A8AF0D03}|Lab2.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CA70363-6F33-42A2-879B-DDF1A8AF0D03}|Lab2.csproj|d:\\4\\\u043E\u043E\u043F\\lab2\\shapes\\line.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CA70363-6F33-42A2-879B-DDF1A8AF0D03}|Lab2.csproj|solutionrelative:shapes\\line.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3CA70363-6F33-42A2-879B-DDF1A8AF0D03}|Lab2.csproj|d:\\4\\\u043E\u043E\u043F\\lab2\\shapes\\rectangleshape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3CA70363-6F33-42A2-879B-DDF1A8AF0D03}|Lab2.csproj|solutionrelative:shapes\\rectangleshape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3CA70363-6F33-42A2-879B-DDF1A8AF0D03}|Lab2.csproj|d:\\4\\\u043E\u043E\u043F\\lab2\\shapes\\shape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CA70363-6F33-42A2-879B-DDF1A8AF0D03}|Lab2.csproj|solutionrelative:shapes\\shape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CA70363-6F33-42A2-879B-DDF1A8AF0D03}|Lab2.csproj|d:\\4\\\u043E\u043E\u043F\\lab2\\shapes\\line.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CA70363-6F33-42A2-879B-DDF1A8AF0D03}|Lab2.csproj|solutionrelative:shapes\\line.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3CA70363-6F33-42A2-879B-DDF1A8AF0D03}|Lab2.csproj|d:\\4\\\u043E\u043E\u043F\\lab2\\shapes\\circle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3CA70363-6F33-42A2-879B-DDF1A8AF0D03}|Lab2.csproj|solutionrelative:shapes\\circle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3CA70363-6F33-42A2-879B-DDF1A8AF0D03}|Lab2.csproj|d:\\4\\\u043E\u043E\u043F\\lab2\\shapes\\shape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CA70363-6F33-42A2-879B-DDF1A8AF0D03}|Lab2.csproj|solutionrelative:shapes\\shape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3CA70363-6F33-42A2-879B-DDF1A8AF0D03}|Lab2.csproj|D:\\4\\\u041E\u041E\u041F\\Lab2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3CA70363-6F33-42A2-879B-DDF1A8AF0D03}|Lab2.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CA70363-6F33-42A2-879B-DDF1A8AF0D03}|Lab2.csproj|d:\\4\\\u043E\u043E\u043F\\lab2\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CA70363-6F33-42A2-879B-DDF1A8AF0D03}|Lab2.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,11 +38,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "D:\\4\\\u041E\u041E\u041F\\Lab2\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -54,7 +54,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "D:\\4\\\u041E\u041E\u041F\\Lab2\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Form1.Designer.cs",
@@ -67,15 +67,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\4\\\u041E\u041E\u041F\\Lab2\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "D:\\4\\\u041E\u041E\u041F\\Lab2\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAI8AAAAAAAAAAAASwJ4AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T14:17:52.283Z"
+              "WhenOpened": "2026-03-13T14:17:52.283Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -85,45 +86,49 @@
               "RelativeDocumentMoniker": "Shapes\\Line.cs",
               "ToolTip": "D:\\4\\\u041E\u041E\u041F\\Lab2\\Shapes\\Line.cs",
               "RelativeToolTip": "Shapes\\Line.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAuwB4AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAADwvyQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T14:12:52.902Z"
+              "WhenOpened": "2026-03-13T14:12:52.902Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "RectangleShape.cs",
               "DocumentMoniker": "D:\\4\\\u041E\u041E\u041F\\Lab2\\Shapes\\RectangleShape.cs",
               "RelativeDocumentMoniker": "Shapes\\RectangleShape.cs",
               "ToolTip": "D:\\4\\\u041E\u041E\u041F\\Lab2\\Shapes\\RectangleShape.cs",
               "RelativeToolTip": "Shapes\\RectangleShape.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T14:12:18.159Z"
+              "WhenOpened": "2026-03-13T14:12:18.159Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Circle.cs",
               "DocumentMoniker": "D:\\4\\\u041E\u041E\u041F\\Lab2\\Shapes\\Circle.cs",
               "RelativeDocumentMoniker": "Shapes\\Circle.cs",
               "ToolTip": "D:\\4\\\u041E\u041E\u041F\\Lab2\\Shapes\\Circle.cs",
               "RelativeToolTip": "Shapes\\Circle.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAuwCUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T14:11:50.567Z"
+              "WhenOpened": "2026-03-13T14:11:50.567Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Shape.cs",
               "DocumentMoniker": "D:\\4\\\u041E\u041E\u041F\\Lab2\\Shapes\\Shape.cs",
               "RelativeDocumentMoniker": "Shapes\\Shape.cs",
               "ToolTip": "D:\\4\\\u041E\u041E\u041F\\Lab2\\Shapes\\Shape.cs",
               "RelativeToolTip": "Shapes\\Shape.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T14:11:09.072Z"
+              "WhenOpened": "2026-03-13T14:11:09.072Z",
+              "EditorCaption": ""
             }
           ]
         }

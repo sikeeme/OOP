@@ -10,7 +10,7 @@ namespace Lab2.Shapes
         public override void StartCreation(Point startPoint)
         {
             Start = startPoint;
-            End = startPoint;
+            End = startPoint;   // пока совпадает с начальной точкой
         }
 
         public override void UpdateCreation(Point currentPoint)
@@ -23,9 +23,15 @@ namespace Lab2.Shapes
             End = endPoint;
         }
 
+        public override void Draw(Graphics g)
+        {
+            using var pen = new Pen(Color, 2);
+            g.DrawLine(pen, Start, End);
+        }
+
         public override string ToString()
         {
-            return $"Line from ({Start.X},{Start.Y}) to ({End.X},{End.Y})";
+            return $"Line from {Start} to {End}";
         }
     }
 }
